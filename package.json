@@ -1,0 +1,30 @@
+{
+  "name": "varunrgandhi.github.io",
+  "version": "1.0.0",
+  "description": "Varun's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunrgandhi/varunrgandhi.github.io.git"
+  },
+  "author": "Varun Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varunrgandhi/varunrgandhi.github.io/issues"
+  },
+  "homepage": "https://github.com/varunrgandhi/varunrgandhi.github.io#readme",
+  "devDependencies": {
+    "grunt": "^0.4.0",
+    "grunt-browser-dependencies": "^0.2.2",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": { 
+    "bootflat": "^2.0.4",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3"
+  }
+}
