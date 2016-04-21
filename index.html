@@ -20,11 +20,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./src/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png">
-
     <title>Varun's Home</title>
-
     <!-- Bootstrap core CSS -->
     <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libs/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="./src/css/main.css" rel="stylesheet">
 </head>
@@ -41,7 +40,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="32" height="32">
+                    <img class="img-circle" src="./src/images/baseIcon.png" alt="ME">
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -59,7 +58,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Varun Gandhi</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <h3>Senior UI Software Engineer</h3>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
             <a href="https://twitter.com/" class="btn btn-round btn-clear btn-twitter">
                 <i class="fa fa-twitter"></i>
@@ -68,12 +67,33 @@
     </div>
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
+        <section id="page-profile" class="page-profile">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Personal Profile</h2>
+                    <div class="spacer"></div>
+                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                </header>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="profile"><img src="img/profile.png" alt="profile">
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
+                        <p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
+                        <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
+                        <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p>Donec sed odio dui. Etiam po≤rta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
             <!-- /.col-lg-4 -->
@@ -136,6 +156,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./libs/jquery/jquery.min.js"></script>
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
