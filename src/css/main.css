@@ -5,7 +5,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 50px;
     padding-bottom: 20px;
     color: #5a5a5a;
 }
@@ -40,6 +39,7 @@ body {
 -------------------------------------------------- */
 
 .jumbotron {
+    padding-top: 70px;
     text-align: center;
     color: #ffffff;
     background: linear-gradient(90deg, #5a5a5a, #700000, #5a5a5a);
