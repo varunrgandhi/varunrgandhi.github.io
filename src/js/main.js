@@ -10,7 +10,15 @@ $(function() {
     $(".nav a").on("click", function() {
         $(".nav").find(".active").removeClass("active");
         $(this).parent().addClass("active");
+        collapseNavbar();
     });
 
+    $(document).on("click touchend", function() {
+        collapseNavbar();
+    });
+
+    var collapseNavbar = function () {
+        $(".navbar-collapse.in").collapse('hide');
+    };
     console.log("JS Ready");
-})
+});

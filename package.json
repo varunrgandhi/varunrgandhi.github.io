@@ -18,13 +18,7 @@
   "homepage": "https://github.com/varunrgandhi/varunrgandhi.github.io#readme",
   "devDependencies": {
     "grunt": "^0.4.0",
-    "grunt-browser-dependencies": "^0.2.2",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-watch": "^1.0.0"
-  },
-  "dependencies": { 
-    "bootflat": "^2.0.4",
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.3"
   }
 }
