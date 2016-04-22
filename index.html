@@ -52,17 +52,18 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a id="home">HOME</a></li>
+                    <li><a id="about">ABOUT</a></li>
+                    <li><a id="skills">SKILLS</a></li>
+                    <li><a id="experience">EXPERIENCE</a></li>
+                    <li><a id="education">EDUCATION</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- JUMBOTRON -->
-    <div class="jumbotron">
+    <div class="jumbotron home">
         <div class="container">
             <h1>Varun Gandhi</h1>
             <h3>UI Software Engineer</h3>
@@ -93,87 +94,99 @@
             </p>
         </div>
     </div>
+
     <!-- MAIN CONTAINER -->
-    <div class="container marketing">
+    <div class="container-fluid main">
+
         <!-- About Me section -->
-        <section id="page-profile" class="page-profile">
+        <section class="about">
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title">Personal Profile</h2>
-                    <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    <hr/>
                 </header>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="profile"><img src="img/profile.png" alt="profile">
+                    <div class="col-md-3 pic">
+                        <div>
+                            <img src="./src/images/profile2.jpg" alt="me">
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
-                        <p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
-                        <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
-                        <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum.</p>
+                    <div class="col-md-6">
+                        <h4>I am a father, software engineer by profession, mechanical engineer by education and a technology enthusiast.</h4>
+                        <p>Senior software engineer with 7+ years of experience and passion for framework and UI development to deliver a user-centric experience.</p>
+                        <p>I have a wide range of knowledge in multiple programming languages, platforms and software frameworks</p>
+                        <p>Experienced in working with large object oriented code bases and creating robust, easy to use &amp well tested programming interfaces.</p>
+                        <p>Skilled in multi-tasking, project management and working as a key contributor/mentor in highly cross functional and collaborative teams.</p>
+                    </div>
+                    <div class="col-md-3 pic">
+                        <div>
+                            <img src="./src/images/baseIcon.png" alt="me">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam po≤rta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+        <!-- Skills section -->
+        <section class="skills">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <hr/>
+                </header>
+                <div class="row programmingSkills">
+                    <h3>Programming Languages</h3>
+                    <div class="col-md-6 progressSet1">
+                        <h4>Java</h4>
+                        <div class="progress">
+                            <div id="javaSkill" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <h4>C++</h4>
+                        <div class="progress">
+                            <div id="cppSkill" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <h4>MATLAB</h4>
+                        <div class="progress">
+                            <div id="mlSkill" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 progressSet2">
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div id="jsSkill" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div id="htmlSkill" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div id="cssSkill" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Libraries/Frameworks</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Operating Systems</h3>
+                    </div>
+                </div>
             </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-        <!-- START THE FEATURETTES -->
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
-        </div>
-        <hr class="featurette-divider">
+        </section>
+
+
         <!-- /END THE FEATURETTES -->
         <!-- FOOTER -->
         <footer>

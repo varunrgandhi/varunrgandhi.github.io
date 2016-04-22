@@ -40,9 +40,10 @@ body {
 
 .jumbotron {
     padding-top: 70px;
+    margin: 0px;
     text-align: center;
     color: #ffffff;
-    background: linear-gradient(90deg, #5a5a5a, #700000, #5a5a5a);
+    background: linear-gradient(90deg, #5a5a5a, #2196F3, #5a5a5a);
     background-size: 600% 600%;
     -webkit-animation: JumbotronAnimation 16s ease infinite;
     -moz-animation: JumbotronAnimation 16s ease infinite;
@@ -85,130 +86,80 @@ body {
     }
 }
 
-@-webkit-keyframes shake {
-    0%, 100% {
-        -webkit-transform: translateX(0);
-    }
-    25%, 75% {
-        -webkit-transform: translateX(-5px);
-    }
-    50% {
-        -webkit-transform: translateX(5px);
-    }
-}
-
-@-moz-keyframes shake {
-    0%, 100% {
-        -moz-transform: translateX(0);
-    }
-    25%, 75% {
-        -moz-transform: translateX(-5px);
-    }
-    50% {
-        -moz-transform: translateX(5px);
-    }
-}
-
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25%, 75% {
-        transform: translateX(-5px);
-    }
-    50% {
-        transform: translateX(5px);
-    }
-}
-
 .social .btn.btn-social-icon {
     margin: 10px 0px;
+    border-radius: 50%;    
 }
 
 @media screen and (min-width: 768px) {
     .social .btn.btn-social-icon:hover {
-        -webkit-animation: shake .3s ease;
-        -moz-animation: shake .3s ease;
-        animation: shake .3s ease;
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     .social .btn.btn-social-icon {
+        transition: transform .7s;
         margin: 20px 10px;
+        zoom: 1.2;
     }
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
+.container-fluid.main section .container{
+    padding-top: 50px;
+}
 
-/* Center align the text within the three columns below the carousel */
+.container-fluid.main {
+    padding: 0px;
+}
 
-.marketing .col-lg-4 {
-    margin-bottom: 20px;
+.main .section-header {
     text-align: center;
 }
 
-.marketing h2 {
-    font-weight: normal;
+.main .section-header hr{
+    width: 60%;
+    border-top: 2px solid #2196F3;
 }
 
-.marketing .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
+/* Personal Profile - about section
+-------------------------------------------------- */
+.main .about {
+    background-color: #EEEEDD;
+    padding: 20px 10px;     
 }
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 80px 0;
-    /* Space out the Bootstrap <hr> more */
+.main .about .pic img {
+    width: 150px;
+    height: 150px;
+    border: 5px groove black;
 }
 
-
-/* Thin out the marketing headings */
-
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
+.main .about .pic {
+    text-align: center;
+    padding: 5px;   
 }
 
 
-/* RESPONSIVE CSS
+
+/* Skills section
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-    .featurette-heading {
-        font-size: 50px;
-    }
+.main .skills {
+    background-color: #ffffff;
+    padding: 20px 10px;     
 }
 
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
-    }
+.main .skills h3 {
+    text-align: center;
 }
+
+.main .programmingSkills h4 {
+    text-align: center;
+}
+
+
+
+
+
