@@ -1,5 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+@import url('./timeline.css');
 
 
 /* Padding below the footer and lighter body text */
@@ -8,7 +9,6 @@ body {
     padding-bottom: 20px;
     color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -88,7 +88,7 @@ body {
 
 .social .btn.btn-social-icon {
     margin: 10px 0px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,6 +105,8 @@ body {
 }
 
 
+/* CUSTOMIZE THE Main content area
+-------------------------------------------------- */
 
 .container-fluid.main section .container{
     padding-top: 50px;
@@ -114,20 +116,21 @@ body {
     padding: 0px;
 }
 
-.main .section-header {
+.main section header {
     text-align: center;
 }
 
-.main .section-header hr{
+.main section header hr{
     width: 60%;
     border-top: 2px solid #2196F3;
 }
+
 
 /* Personal Profile - about section
 -------------------------------------------------- */
 .main .about {
     background-color: #EEEEDD;
-    padding: 20px 10px;     
+    padding: 20px 10px;
 }
 
 .main .about .pic img {
@@ -138,7 +141,7 @@ body {
 
 .main .about .pic {
     text-align: center;
-    padding: 5px;   
+    padding: 5px;
 }
 
 
@@ -148,17 +151,27 @@ body {
 
 .main .skills {
     background-color: #ffffff;
-    padding: 20px 10px;     
+    padding: 20px 10px;
 }
 
-.main .skills h3 {
+.main .skills h4 {
     text-align: center;
 }
 
-.main .programmingSkills h4 {
-    text-align: center;
+.main .programmingSkills .progress .plabel {
+    position: absolute;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
 }
 
+/* Experience section
+-------------------------------------------------- */
+.main .experience {
+    background-color: #EEEEDD;
+    padding: 20px 10px;
+}
 
 
 

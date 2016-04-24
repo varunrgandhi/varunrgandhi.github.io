@@ -15,11 +15,10 @@ $(function() {
 
     // Updating which nav bar item is active
     $(".nav a").on("click", function() {
-        $('html, body').animate({            
+        $('html, body').animate({
             scrollTop: $('.' + $(this).attr('id')).offset().top
         }, 500);
         collapseNavbar();
-        console.log($(this).attr('id'));
     });
 
     // Collapse navbar on touch/click
@@ -36,17 +35,20 @@ $(function() {
         var elemBottom = elemTop + elem.height();
 
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }; 
-    
+    };
+
+    // animate programming skills levels
     var skills = [$("#javaSkill"), $("#cppSkill"), $("#mlSkill"), $("#jsSkill"), $("#htmlSkill"), $("#cssSkill")];
-    var skillVal = [80, 60, 100, 60, 50, 40];
-    $(document).scroll(function() {
+    var skillVal = [90, 70, 100, 90, 80, 60];
+    var animateSkills = function() {
         skills.forEach(function(elem, index) {
             // animate programming skill
-            var val = (isScrolledIntoView(elem)) ? skillVal[index] : 0;            
+            var val = (isScrolledIntoView(elem)) ? skillVal[index] : 0;
             elem.css('width', val + '%').attr('aria-valuenow', val);
         });
-    });
-    
+    };
+    $(document).scroll(animateSkills);
+    animateSkills();
+
     console.log("JS Ready");
 });
