@@ -1,7 +1,7 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-@import url('./timeline.css');
 
+@import url('./timeline.css');
 
 /* Padding below the footer and lighter body text */
 
@@ -9,6 +9,7 @@ body {
     padding-bottom: 20px;
     color: #5a5a5a;
 }
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -108,7 +109,7 @@ body {
 /* CUSTOMIZE THE Main content area
 -------------------------------------------------- */
 
-.container-fluid.main section .container{
+.container-fluid.main section .container {
     padding-top: 50px;
 }
 
@@ -120,7 +121,7 @@ body {
     text-align: center;
 }
 
-.main section header hr{
+.main section header hr {
     width: 60%;
     border-top: 2px solid #2196F3;
 }
@@ -128,6 +129,7 @@ body {
 
 /* Personal Profile - about section
 -------------------------------------------------- */
+
 .main .about {
     background-color: #EEEEDD;
     padding: 20px 10px;
@@ -143,7 +145,6 @@ body {
     text-align: center;
     padding: 5px;
 }
-
 
 
 /* Skills section
@@ -166,13 +167,11 @@ body {
     z-index: 1;
 }
 
+
 /* Experience section
 -------------------------------------------------- */
+
 .main .experience {
     background-color: #EEEEDD;
     padding: 20px 10px;
 }
-
-
-
-
