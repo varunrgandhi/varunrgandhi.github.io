@@ -2,13 +2,6 @@ $(function() {
 
     var $window = $(window);
 
-    // Page Navigation logic
-    var makeNavItemActive = function() {
-        $('html, body').animate({
-            scrollTop: $(navLink).offset().top
-        }, 500);
-    };
-
     var collapseNavbar = function() {
         $(".navbar-collapse.in").collapse('hide');
     };
