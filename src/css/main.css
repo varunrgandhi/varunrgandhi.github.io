@@ -93,16 +93,17 @@ footer {
 .social .btn.btn-social-icon {
     margin: 10px 0px;
     border-radius: 50%;
+    transition: transform .7s;
+}
+
+.social .btn.btn-social-icon:hover {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
-    .social .btn.btn-social-icon:hover {
-        -ms-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
     .social .btn.btn-social-icon {
-        transition: transform .7s;
         margin: 20px 10px;
         zoom: 1.2;
     }
