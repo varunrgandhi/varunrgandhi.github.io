@@ -1,7 +1,7 @@
 # varunrgandhi.github.io
 This repo hosts the code to my personal webpage : https://varunrgandhi.github.io
 
-The webpage is built using static HTML and utilizes a few open source libraries/framefowrks: 
+The webpage is built using static HTML and utilizes a few open source libraries/frameworks: 
 
 1. [Bootstrap](http://getbootstrap.com/)
 2. [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
