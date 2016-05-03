@@ -190,24 +190,13 @@ footer {
     padding: 20px 10px;
 }
 
-.main .projects .carousel {
-    height: 500px;
-    margin-bottom: 60px;
-}
-
-.main .projects .carousel-caption {
-    z-index: 10;
-}
-
 .main .projects .carousel .item {
     height: 500px;
     background-color: #777;
 }
 
-.main .projects .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
+.main .projects .carousel-inner > .item > img,
+.main .projects .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
 }
