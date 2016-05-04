@@ -191,12 +191,13 @@ footer {
 }
 
 .main .projects .carousel .item {
-    height: 500px;
+    height: 550px;
     background-color: #777;
 }
 
 .main .projects .carousel-inner > .item > img,
 .main .projects .carousel-inner > .item > a > img {
-    width: 70%;
+    /* width: 70%; */
     margin: auto;
 }
+
